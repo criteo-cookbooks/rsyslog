@@ -11,3 +11,6 @@ $ActionQueueSaveOnShutdown on # save in-memory data if rsyslog shuts down
 <%= node['rsyslog']['logs_to_forward'] %> @<%= server %>:<%= node['rsyslog']['port'] %>
 <% end -%>
 <% end -%>
+<% if not node['rsyslog']['local_logs'] -%>
+& ~
+<% end -%>

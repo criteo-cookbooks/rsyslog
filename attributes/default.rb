@@ -27,6 +27,7 @@ default['rsyslog']['port']                      = 514
 default['rsyslog']['server_ip']                 = nil
 default['rsyslog']['server_search']             = 'role:loghost'
 default['rsyslog']['remote_logs']               = true
+default['rsyslog']['local_logs']                = true
 default['rsyslog']['per_host_dir']              = '%$YEAR%/%$MONTH%/%$DAY%/%HOSTNAME%'
 default['rsyslog']['max_message_size']          = '2k'
 default['rsyslog']['preserve_fqdn']             = 'off'

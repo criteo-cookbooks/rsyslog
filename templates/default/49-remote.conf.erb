@@ -4,3 +4,6 @@
 <% when "udp" -%>
 *.* @<%= @server %>:<%= node['rsyslog']['port'] %>
 <% end -%>
+<% if not node['rsyslog']['local_logs'] -%>
+& ~
+<% end -%>

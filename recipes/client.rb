@@ -35,7 +35,7 @@ elsif !node['rsyslog']['server']
     backup false
     variables(
       :server => rsyslog_server,
-      :protocol => node['rsyslog']['protocol']
+      :protocol => node['rsyslog']['client']['protocol']
     )
     mode 0644
     notifies :restart, "service[#{node['rsyslog']['service_name']}]"

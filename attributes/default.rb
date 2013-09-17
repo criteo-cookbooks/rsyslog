@@ -36,6 +36,7 @@ default['rsyslog']['repeated_msg_reduction']    = 'on'
 default['rsyslog']['logs_to_forward']           = '*.*'
 default['rsyslog']['enable_imklog']             = true
 default['rsyslog']['config_prefix']             = '/etc'
+default['rsyslog']['filecreatemode']            = '0640'
 
 # The most likely platform-specific attributes
 default['rsyslog']['service_name']              = 'rsyslog'

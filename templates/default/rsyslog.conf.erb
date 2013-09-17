@@ -58,7 +58,7 @@ $WorkDirectory /var/spool/rsyslog
 #
 $FileOwner <%= node['rsyslog']['user'] %>
 $FileGroup <%= node['rsyslog']['group'] %>
-$FileCreateMode 0640
+$FileCreateMode <%= node['rsyslog']['filecreatemode'] %>
 $DirCreateMode 0755
 $Umask 0022
 <% if node['rsyslog']['priv_seperation'] %>

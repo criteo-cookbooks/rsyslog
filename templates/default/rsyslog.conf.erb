@@ -44,6 +44,7 @@ $UDPServerRun <%= node['rsyslog']['port'] %>
 #
 $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
 <% end -%>
+$PreserveFQDN <%= node['rsyslog']['preserve_fqdn'] %>
 
 # Filter duplicated messages
 $RepeatedMsgReduction on

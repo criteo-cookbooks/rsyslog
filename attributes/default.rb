@@ -31,6 +31,7 @@ default["rsyslog"]["max_message_size"]          = "2k"
 default["rsyslog"]["preserve_fqdn"]             = "off"
 default["rsyslog"]["high_precision_timestamps"] = false
 default["rsyslog"]["filecreatemode"]            = "0640"
+default["rsyslog"]["preserve_fqdn"]             = "off"
 
 # The most likely platform-specific attributes
 default["rsyslog"]["service_name"]     = "rsyslog"

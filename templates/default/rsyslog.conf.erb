@@ -27,7 +27,7 @@ $ModLoad <%= mod %>
   <% end %>
 <% end %>
 
-<% if node['rsyslog']['server'] -%>
+<% if node['rsyslog']['server'] && node['rsyslog']['configure_im_modules'] -%>
 # Provide <%= node['rsyslog']['protocol'].upcase %> log reception
 <% case node['rsyslog']['protocol'] -%>
 <% when "tcp" -%>

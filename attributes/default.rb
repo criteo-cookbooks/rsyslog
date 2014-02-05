@@ -24,6 +24,7 @@ default['rsyslog']['relp_port']                 = 20_514
 default['rsyslog']['protocol']                  = 'tcp'
 default['rsyslog']['client']['protocol']        = node['rsyslog']['protocol']
 default['rsyslog']['port']                      = 514
+default['rsyslog']['configure_im_modules']      = true
 default['rsyslog']['server_ip']                 = nil
 default['rsyslog']['server_search']             = 'role:loghost'
 default['rsyslog']['remote_logs']               = true

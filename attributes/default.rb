@@ -50,3 +50,5 @@ when "ubuntu"
 when "arch"
   default["rsyslog"]["service_name"] = "rsyslogd"
 end
+
+default["rsyslog"]["stats"] = false

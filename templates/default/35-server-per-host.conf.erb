@@ -4,6 +4,7 @@
 $DirGroup <%= node['rsyslog']['group'] %> 
 $DirCreateMode 0755
 $FileGroup <%= node['rsyslog']['group'] %>
+$DynaFileCacheSize 1024
 
 $template PerHostAuth,"<%= @log_dir %>/<%= @per_host_dir %>/auth.log"
 $template PerHostCron,"<%= @log_dir %>/<%= @per_host_dir %>/cron.log"

@@ -32,6 +32,9 @@ $ModLoad imklog   # provides kernel logging support (previously done by rklogd)
 <% if node['rsyslog']['max_open_files'] -%>
 $MaxOpenFiles <%= node['rsyslog']['max_open_files'] %>
 <% end -%>
+<% if node['rsyslog']['control_character_escape_prefix'] -%>
+$ControlCharacterEscapePrefix <%= node['rsyslog']['control_character_escape_prefix'] %>
+<% end -%>
 
 <% if node['rsyslog']['server'] -%>
 # Provide <%= @protocol.upcase %> log reception
